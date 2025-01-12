@@ -1,0 +1,104 @@
+
+  .EMR {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    gap: 70px;
+  }
+  .login-form {
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 90px;
+    border: 1px solid rgb(193, 191, 191);
+  }
+  .EMR-Section {
+    height: 350px;
+    place-content: center;
+    text-align: center;
+  }
+  .EMR-SECTION {
+    height: 100%;
+  }
+  .EMR-SECTION img {
+    height: 100%;
+  }
+  .EMR-Section h1{
+    margin: 0;
+  }
+  .input-group {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    width: 90%;
+    padding-left: 30px;
+  }
+  
+  .input-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .select-group {
+    display: flex;
+    width: 90%;
+    gap: 30px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+  }
+  
+  select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .checkbox-group label {
+    margin-left: 5px;
+  }
+  .BUTTON {
+    display: flex;
+    gap: 40px;
+    padding-left: 30px;
+  }
+  
+  .login-button {
+    width: 45%;
+    padding: 10px;
+  
+    background: #0000ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .login-button:hover {
+    background:white;
+    color: blue;
+    border: 2px solid blue;
+  }
+  
+  .forgot-password {
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    margin-top: 10px;
+    color: #0000ff;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
