@@ -2,6 +2,7 @@ import React from "react";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { FaChevronDown, FaSearch, FaUserCircle } from "react-icons/fa";
 import { HiMiniArrowTrendingUp } from "react-icons/hi2";
+import { Link } from "react-router-dom";
 
 const Table = () => {
   const data = Array(10).fill({
@@ -163,11 +164,13 @@ const Home = () => {
               </div>
             ))}
           </div>
-          <div>
-            <button className="bg-custom hover:bg-custom/90 bg-blue-900 rounded-md text-white px-4 py-2 !rounded-button">
-              New Registration
-            </button>
-          </div>
+          <Link to={"/register"}>
+            <div>
+              <button className="bg-custom hover:bg-custom/90 bg-blue-900 rounded-md text-white px-4 py-2 !rounded-button">
+                New Registration
+              </button>
+            </div>
+          </Link>
         </div>
 
         <div className="mt-6 flex justify-end">

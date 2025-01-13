@@ -1,48 +1,21 @@
 import React from "react";
 
-const Register3 = () => {
+const Summary= () => {
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col justify-center items-center">
-      <div className="w-full max-w-4xl bg-white shadow-md rounded-lg p-8">
-        <div className="flex justify-between items-center mb-8">
-          <h1 className="text-2xl font-bold">Registration / New Patients</h1>
-          <div className="text-gray-700 flex items-center space-x-2">
-            <span className="font-medium">General Ward</span>
-            <i className="fas fa-user-circle text-xl"></i>
-          </div>
-        </div>
-
-        {/* Progress Bar */}
-        <div className="flex justify-center items-center space-x-4 mb-12">
-          <div className="w-10 h-10 bg-blue-500 text-white flex justify-center items-center rounded-full">
-            ✓
-          </div>
-          <div className="w-20 h-1 bg-blue-500"></div>
-          <div className="w-10 h-10 bg-blue-500 text-white flex justify-center items-center rounded-full">
-            ✓
-          </div>
-          <div className="w-20 h-1 bg-blue-500"></div>
-          <div className="w-10 h-10 bg-blue-500 text-white flex justify-center items-center rounded-full">
-            ✓
-          </div>
-          <div className="w-20 h-1 bg-blue-500"></div>
-          <div className="w-10 h-10 bg-blue-500 text-white flex justify-center items-center rounded-full">
-            ✓
-          </div>
-        </div>
-
-        <h2 className="text-center text-lg font-semibold text-blue-500 mb-8">
-          Summary
-        </h2>
+    <div className=" bg-white ">
+    
 
         {/* Summary Details */}
-        <div className="bg-gray-100 p-6 rounded-lg mb-8">
+        <div className="bg-white p-6 rounded-lg mb-8">
           <div className="grid grid-cols-2 gap-4 text-lg">
+            <div className="flex flex-col gap-4">
+
             <div>
               <span className="font-medium">Patient Name: </span>Test
             </div>
             <div>
               <span className="font-medium">Gender: </span>Female
+            </div>
             </div>
             <div className="col-span-2">
               <span className="font-medium">Department to Sent: </span>
@@ -70,7 +43,7 @@ const Register3 = () => {
         </div>
 
         {/* Buttons */}
-        <div className="flex justify-end space-x-4">
+        <div className="flex justify-end gap-6 pt-10">
           <button className="bg-green-500 text-white font-medium py-2 px-4 rounded-lg hover:bg-green-600 transition">
             Print Sticker
           </button>
@@ -79,8 +52,7 @@ const Register3 = () => {
           </button>
         </div>
       </div>
-    </div>
   );
 };
 
-export default Register3;
+export default Summary;
