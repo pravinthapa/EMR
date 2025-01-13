@@ -1,5 +1,7 @@
 import React from "react";
 import hero from "../../assets/hero.png";
+import { Link } from "react-router-dom";
+
 
 export default function Login() {
   return (
@@ -17,7 +19,8 @@ export default function Login() {
           <input type="text" placeholder="Username" />
           <input type="password" placeholder="Password" />
         </div>
-        <div className="select-group">
+       
+       <div className="select-group">
           <select>
             <option >General Ward</option>
             <option value="ICU">ICU</option>
@@ -34,9 +37,14 @@ export default function Login() {
           <label htmlFor="keep-logged">Keep me logged in</label>
         </div>
         <div className="BUTTON">
-          <button type="submit" className="login-button">
-            Login
-          </button>
+        <Link className="w-[43%] text-center" to={"/"}>
+                  <div className="login-button">
+                    <button >
+                     login
+                    </button>
+                  </div>
+                </Link>
+          
           <a href="#" className="forgot-password">
             Forget password?
           </a>

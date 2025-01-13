@@ -71,8 +71,8 @@
     padding-left: 30px;
   }
   
-  .login-button {
-    width: 45%;
+   .login-button {
+    width: 100%;
     padding: 10px;
   
     background: #0000ff;
@@ -81,7 +81,8 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 17px;
-  }
+  } 
+  
   
   .login-button:hover {
     background:white;

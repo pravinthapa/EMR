@@ -55,14 +55,21 @@ const Register = () => {
       <div className="border-2  h-[70%] w-[75%] ml-[12.5%]  mt-10 px-20 ">
         <div className="flex justify-center items-center gap-32 ">
           {Slider.map((item, index) => (
-            <div className="flex flex-col items-center  gap-2" key={index}>
-              <div
-                onClick={() => setActive(item?.id)}
-                className="w-8 h-8 flex items-center justify-center border rounded-full text-blue-500 bg-white "
-              >
+            <div
+              onClick={() => setActive(item?.id)}
+              className="flex flex-col items-center  gap-2"
+              key={index}
+            >
+              <div className= "w-8 h-8 flex items-center justify-center border rounded-full text-blue-500 bg-white ">
                 {item.id}
               </div>
-              <div className={` ${active === item?.id ? " opacity-100" : "opacity-0"}`}>
+              <div
+                className={` ${
+                  active === item?.id
+                    ? " opacity-100 text-blue-500 font-bold "
+                    : "opacity-0"
+                }`}
+              >
                 {item.title}
               </div>
             </div>
